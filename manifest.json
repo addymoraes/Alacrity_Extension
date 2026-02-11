@@ -1,10 +1,23 @@
 {
-  "name": "Hello",
-  "description": "Hi",
+  "name": "Alacrity Extension",
+  "description": "AI tracker",
   "version": "1.0",
   "manifest_version": 3,
+  "permissions": [
+    "tabs",
+    "webNavigation",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "DomainMatch.js"
+  },
   "action": {
-    "default_popup": "index.html",
-    "default_icon": "lebron.jpg"
-  }
+    "default_popup": "popup.html"
+    },
+  "web_accessible_resources": [
+    {
+      "resources": ["index.html", "script.js", "popup.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }

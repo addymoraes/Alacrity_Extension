@@ -21,7 +21,7 @@ chrome.webNavigation.onBeforeNavigate.addListener((details) => {
     if (details.frameId === 0) {
         if (checkUrl(details.url)) {
             chrome.tabs.update(details.tabId, {
-                url: chrome.runtime.getURL("warning.html") + "?blocked=" + encodeURIComponent(details.url)
+                url: chrome.runtime.getURL("popup.html") + "?blocked=" 
             })
         }
     }
