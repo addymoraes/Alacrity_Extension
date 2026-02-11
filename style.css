@@ -1,0 +1,157 @@
+/* ===== GLOBAL STYLES ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body and Font Styling */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f4f7fc;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #333;
+}
+
+/* Header Styling */
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* ===== TABLE STYLES ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid #ddd; /* Add border around the table */
+  background-color: #ffffff; /* White background for the table */
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  border: 1px solid #ddd; /* Add border for separation */
+}
+
+th {
+  background-color: #080808;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+th:hover {
+  background-color: #060606;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #e9f5ff;
+  cursor: pointer;
+}
+
+td {
+  color: #666;
+  word-wrap: break-word;
+}
+
+td:hover {
+  background-color: #e9f5ff;
+}
+
+/* ===== RISK SCORE STYLES ===== */
+#riskScore {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #e2f4e2;
+  border: 1px solid #92d892;
+  color: #2e7d32;
+  width: fit-content;
+  /* Removed border-radius to make it sharp-cornered */
+  border-radius: 0; /* Making the corners sharp */
+}
+
+/* ===== BUTTON STYLES ===== */
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #050505;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* Removed border-radius to make the button sharp-edged */
+  border-radius: 0; /* Making the button sharp-cornered */
+}
+
+button:hover {
+  background-color: #0b0b0b;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* ===== ANIMATED TRANSITIONS FOR MODERN INTERACTIVITY ===== */
+.fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  table {
+    font-size: 10px;
+  }
+}
